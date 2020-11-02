@@ -1,0 +1,27 @@
+show databases;
+create database stud_det;
+use stud_det;
+
+create table course( course_id int , sub_1 varchar(20) not null , sub_2 varchar(20) not null, sub_3 varchar(20) not null, sub_4 varchar(20) not null,
+ HOD varchar(20), primary key(course_id));
+desc course;
+
+create table student( s_id int , sname varchar(20) not null ,DOB date not null , mno varchar(10) unique , gender varchar(6) not null , c_id int , primary key(s_id), foreign key(c_id) references course( course_id));
+
+insert into course values(1, 'physics','chemistry','maths','computer','Praveen');
+insert into course values(2, 'physics','chemistry','maths','Biology','Sanjay');
+insert into course values(3, 'physics','chemistry','maths','Electronics','Purushotham');
+insert into course values(4, 'physics','chemistry','maths','Agriculture','Prathibha');
+insert into course values(5, 'physics','chemistry','maths','Statistics','Sinchana');
+
+
+insert into student values(1,'Praveen kumar R', '1998-10-10','9632422458','Male',2);
+insert into student values(2,'Sanjay', '1969-09-06','9632422465','FEMale',1);
+insert into student values(3,'Puruboi', '1998-09-21','9632422459','Male',3);
+insert into student values(4,'Sampritha', '1998-09-09',null,'FEMale',3);
+insert into student values(5,'vasudha', '1998-10-10','96324224356','FEMale',2);
+insert into student values(6,'navya', '1998-09-03','9632422567','FEMale',4);
+insert into student values(7,'rachitha', '1998-01-10','9632425458','FEMale',1);
+insert into student values(8,'Nithin', '1989-05-30',null,'Male',2);
+insert into student values(9,'Suhas', '1998-10-11','9632422498','Male',3);
+insert into student values(10,'Srinidha', '1978-11-10',null,'Male',5);
