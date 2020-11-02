@@ -1,0 +1,60 @@
+create database Ecomm;
+use ecomm
+create table products(Pid int , Pname varchar(20) not null , price decimal(6,2) not null check (price>0), ava_qty int not null , primary key(Pid));
+create table customer(Cid int , Cname varchar(20) not null ,Cno varchar(20) not null unique , primary key(Cid));
+create table orders(Oid int ,Cid int, Pid int, qty int not null, primary key(Oid), foreign key(Cid) references customer(Cid), foreign key(Pid) references products(Pid));
+desc orders;
+desc products;
+desc customer;
+
+insert into products values(1, 'çake',250,15);
+insert into products values(2, 'Bread',50,45);
+insert into products values(3, 'rusk',100,25);
+insert into products values(3, 'Belgian_Waffle',300,25);
+insert into products values(4, 'Belgian_Waffle',300,25);
+insert into products values(5, 'Pastry',400,25);
+insert into products values(6, 'Cupcakes',120,55);
+insert into products values(7, 'chicken_pack',220,15);
+insert into products values(8, 'Fish',420,15);
+insert into products values(9, 'Egg',100,60);
+insert into products values(10, 'Five_star',10,110);
+
+
+select * from products;
+
+
+insert into customer values(1, 'Puruboi',9513879748);
+insert into customer values(2, 'Sanjay',9513879754);
+insert into customer values(3, 'Praveen',9513879664);
+insert into customer values(4, 'Navya',9514479664);
+insert into customer values(5, 'Rachitha',8514479664);
+insert into customer values(6, 'Sampritha',8345479664);
+insert into customer values(7, 'vasudha',8335479664);
+insert into customer values(8, 'Suhas',8335479633);
+insert into customer values(9, 'Nithin',8335479631);
+insert into customer values(10, 'Vinay',7335479631);
+
+
+select * from customer;
+
+
+insert into orders values(1,2,3,2);
+insert into orders values(1,3,4,3);
+insert into orders values(2,3,4,3);
+insert into orders values(3,1,3,3);
+insert into orders values(4,5,7,3);
+insert into orders values(5,6,9,5);
+insert into orders values(6,6,9,5);
+insert into orders values(7,6,9,5);
+insert into orders values(8,4,1,6);
+insert into orders values(9,10,10,20);
+insert into orders values(10,3,8,2);
+insert into orders values(11,1,3,2);
+insert into orders values(12,1,3,2);
+insert into orders values(13,1,3,2);
+insert into orders values(14,4,2,2);
+insert into orders values(15,6,5,2);
+
+
+select * from orders;
+
