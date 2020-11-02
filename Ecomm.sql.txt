@@ -33,6 +33,8 @@ insert into customer values(7, 'vasudha',8335479664);
 insert into customer values(8, 'Suhas',8335479633);
 insert into customer values(9, 'Nithin',8335479631);
 insert into customer values(10, 'Vinay',7335479631);
+insert into customer values(11, 'Sinchana',7635479631);
+insert into customer values(12, 'Prathiba',7336679631);
 
 
 select * from customer;
@@ -54,6 +56,11 @@ insert into orders values(12,1,3,2);
 insert into orders values(13,1,3,2);
 insert into orders values(14,4,2,2);
 insert into orders values(15,6,5,2);
+insert into orders values(16,11,7,2);
+insert into orders values(20,12,5,2);
+insert into orders values(19,11,5,2);
+insert into orders values(18,12,5,2);
+insert into orders values(17,12,8,2);
 
 
 select * from orders;
