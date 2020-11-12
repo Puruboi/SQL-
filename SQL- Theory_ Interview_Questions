@@ -1,0 +1,20 @@
+1. Data : Raw facts which describes the attributes or properties of an entity or object is called data.
+Eg: employer is an entity or object , [emp_id, Name , Contact , Salary ] are attributes or properties , [1 , Puruboi , 98987777812, 100000] are values or data or raw facts 
+
+2. DataBase : Place where we store data is called DataBase.
+    Features of DataBase : 
+          1 Insert/Create , Read/Retrieve , Update/Modify , Delete/Drop  { CRUD operations } 
+          2 CRUD operations performance of DB is based on crud operations.
+          3 Security 
+          4 Authorisation 
+          
+3. DBMS (Data Base Management Software ) : The software which is used to create , Manage , Manipulate a database is knwon as DBMS. The responsibilty of storing and organising the data in the database is taken care by DBMS software 
+  hence the job of the programmer is only to ask the DBMS to perform the following Task Create, update, read , delete.
+
+4. DBC ( Database Connector ) : A Programmer Can Connect his Software with the DBMS using DBC , Programmer Can interact with a DBMS Software with the help of a query Lannguage
+
+5. DBMS Models : 1.Relational Model, 2.Object oriented Model, 3.Document Oriented Model, 4.Graphs Oriented Model, 5.RDBMS ( Relational Model DBMS )
+
+6. RDBMS : A DBMS Software which stores and organises the data using relational Model is known as RDBMS , A DBMS Software which stores and organises the data using Codd rules is known as RDBMS
+Eg : MySQL , Oracle RDBMS , SQL Server , DB2.
+
